@@ -1,0 +1,16 @@
+#libevent pkg-config source file
+
+prefix=/home/biqiancheng/ntp-4.2.8p15/ntp-4.2.8p15_arm
+exec_prefix=/home/biqiancheng/ntp-4.2.8p15/ntp-4.2.8p15_arm
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libevent
+Description: libevent is an asynchronous notification event loop library
+Version: 2.1.5-beta
+Requires:
+Conflicts:
+Libs: -L${libdir} -levent
+Libs.private: 
+Cflags: -I${includedir}
+

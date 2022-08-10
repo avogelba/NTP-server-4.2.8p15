@@ -1,0 +1,16 @@
+#libevent pkg-config source file
+
+prefix=/home/biqiancheng/ntp-4.2.8p15/ntp-4.2.8p15_arm
+exec_prefix=/home/biqiancheng/ntp-4.2.8p15/ntp-4.2.8p15_arm
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libevent_openssl
+Description: libevent_openssl adds openssl-based TLS support to libevent
+Version: 2.1.5-beta
+Requires: libevent
+Conflicts:
+Libs: -L${libdir} -levent_openssl
+Libs.private:  
+Cflags: -I${includedir} 
+
