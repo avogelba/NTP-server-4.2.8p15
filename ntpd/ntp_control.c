@@ -3799,13 +3799,13 @@ send_mru_entry(
 	u_int	remaining;
 	const char * pch;
 
-	remaining = COUNTOF(sent);
-	ZERO(sent);
-	noise = (u_int32)(rand() ^ (rand() << 16));
+	remaining = COUNTOF(sent); // get the num of elements in the array sent
+	ZERO(sent); //ZERO sets the target memory to all 0 - so in this case, the array sent will be set to all 0
+	noise = (u_int32)(rand() ^ (rand() << 16)); // generate some random number (the shifing is cause rand() tend to generate numbers with the same lower bits
 	while (remaining > 0) {
-		which = (noise & 7) % COUNTOF(sent);
-		noise >>= 3;
-		while (sent[which])
+		which = (noise & 7) % COUNTOF(sent); // get the last 3 bits off noise (& 0b111) and mod it to the num of elements in the array. basically take a random index in the array
+		noise >>= 3; // get rid of these 3 bits we used earlier
+		while (sent[which]) // check that elemnet in that random index position. while its not 0 
 			which = (which + 1) % COUNTOF(sent);
 
 		switch (which) {
