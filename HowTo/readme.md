@@ -141,11 +141,10 @@ git clone git://git.openssl.org/openssl.git
 > 5\. Compile as in instructions
 
 Followed the instructions worked fine:
-
-> ![](images\media\image1.png){width="6.3in"
+> ![](HowTo/images/media/image1.png){width="6.3in"
 > height="3.2944444444444443in"}
 >
-> ![](images\media\image2.png){width="6.3in"
+> ![](HowTo/images/media/image2.png){width="6.3in"
 > height="3.2944444444444443in"}
 
 ### 2. NTP compile in VS2022:
@@ -179,7 +178,7 @@ http://www.eecis.udel.edu/\~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz
 Include openssl-1.1.1q.x64 to VC++ Directories in Library and Include
 Files
 
-![](images\media\image3.png){width="6.3in" height="4.360416666666667in"}
+![](HowTo/images\media\image3.png){width="6.3in" height="4.360416666666667in"}
 
 9.  Fix "**noreturn**" in the code, this will render it to be not
     compatible with other compilers anymore
@@ -332,7 +331,7 @@ project:
 
 10. Set Compile settings to release and x64
 
-![](images\media\image4.png){width="2.1979166666666665in"
+![](HowTo/images/media/image4.png){width="2.1979166666666665in"
 height="0.3333333333333333in"}
 
 11. Compile
