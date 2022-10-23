@@ -84,22 +84,22 @@ for x64
 
  or use GIT
 
-git clone git://git.openssl.org/openssl.git
-
+>git clone git://git.openssl.org/openssl.git
+>
 > Access to specific branches is possible via the standard branch and
 > checkout commands. See the discussion of branch naming below for more
 > information.
 >
 > On Windows, once the repository is cloned, you should ensure that line
 > endings are set correctly:
-
-\$ cd openssl
-
-\$ git config core.autocrlf false
-
-\$ git config core.eol lf
-
-\$ git checkout .
+>
+>\$ cd openssl
+>
+>\$ git config core.autocrlf false
+>
+>\$ git config core.eol lf
+>
+>\$ git checkout .
 
 5\. Compile as in instructions
 
